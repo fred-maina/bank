@@ -45,5 +45,5 @@ The Bank Management System consists of several classes:
 To run the Bank Management System, execute the following command:
 
 ```bash
-python bank_management_system.py
+python accounts.py
 
