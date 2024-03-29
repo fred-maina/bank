@@ -45,25 +45,4 @@ To run the Bank Management System, execute the following command:
 
 ```bash
 python bank_management_system.py
-```bash
-### Future Improvements
 
-1. **Enhanced Error Handling**: Implement more robust error handling mechanisms throughout the code to handle unexpected user inputs or system errors gracefully.
-
-2. **User Authentication**: Strengthen user authentication by implementing more secure methods such as hashing user passwords before storing them.
-
-3. **Transaction History**: Add functionality to keep track of transaction history for each account, allowing users to review past transactions.
-
-4. **User Interface**: Improve the user interface by creating a graphical user interface (GUI) using libraries like Tkinter or PyQt, making the banking experience more intuitive and user-friendly.
-
-5. **Data Persistence**: Implement data persistence by integrating a database system (e.g., SQLite, MySQL) to store account information securely and enable data retrieval even after the program is closed and reopened.
-
-6. **Account Types**: Introduce different types of accounts (e.g., savings, checking) with varying features and interest rates.
-
-7. **Security Enhancements**: Implement additional security features such as two-factor authentication (2FA) or transaction verification codes to further protect user accounts from unauthorized access.
-
-8. **Transaction Limits**: Set limits on transaction amounts or frequency to prevent potential fraud or misuse of accounts.
-
-9. **Multi-Currency Support**: Add support for multiple currencies to allow users to perform transactions in different currencies based on their needs.
-
-10. **Automated Tests**: Develop automated tests to ensure the reliability and correctness of the codebase, covering various scenarios and edge cases.
