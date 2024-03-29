@@ -1,6 +1,7 @@
 # Bank Management System
 
-This project is a Python-based Bank Management System designed for practicing Python programming skills.
+This project is a Python-based Bank Management System designed for practicing Python programming skills. It covers many basic python skills.
+Feel free to contribute and fork these repo. 
 
 ## Project Overview
 
