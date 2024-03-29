@@ -1,5 +1,5 @@
 from bank_account import Bank  
-import random         
+import random
 bank=Bank("KCB BANK")
 def account_operations(account_number):
     print("Welcome to your account choose any of the following Services: ")
@@ -26,7 +26,7 @@ def account_operations(account_number):
 def account_creation():
     try:
         global accountNumber
-        accountNumber = random.randint(0,1000000)
+        accountNumber = random.randint(1000000, 9999999)
         name = input("Enter your Name: ")
         
         # Loop until a valid PIN is entered
