@@ -43,7 +43,7 @@ def account_creation():
         print(v)
 
 if __name__ == "__main__" :
-    print("Hello There Welcome to KCB Bank Self-service Menu: ")
+    print("Hello There Welcome to Py-Bank Self-service Menu: ")
     try:
         i=int(input("Input 1 if you would like to Create a New Acount or 2 To go to your Account: "))
         if i == 1:
