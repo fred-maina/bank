@@ -33,7 +33,7 @@ def account_creation():
         while True:
             pin = input("Choose a 4 digit pin: ")
             if len(pin) != 4 or not pin.isdigit():
-                print("Invalid PIN. Please input a 4 digit numeric pin.")
+                print("Invalid PIN. Please input a 4 digit numeric pin!")
             else:
                 pin = int(pin)
                 break
