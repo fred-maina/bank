@@ -3,14 +3,14 @@ import random
 bank=Bank("KCB BANK")
 def account_operations(account_number):
     print("Welcome to your account choose any of the following Services: ")
-    try:
-        while (True):
+    while(True):
+        try:
             j=int(input("choose 1 for account balance and Information. Choose 2 to deposit choose 3 to withdraw and 4 to exit: "))
             if j == 1:
                 bank.displayInformation(account_number)
             elif j == 2:
                 amount=int(input("Enter the amount of money you would like to Deposit: "))
-                pin=int(input("Input Your PIN"))
+                pin=int(input("Input Your PIN: "))
                 bank.perform_transaction(account_number,pin,"Deposit",amount)
             elif j ==3 :
                 amount=int(input("Please Input the amount You would Like to Withdraw: "))
@@ -21,8 +21,8 @@ def account_operations(account_number):
                 break
             else:
                 print("Invalid Selection Please Try Again")
-    except ValueError as v:
-        print(v)
+        except ValueError as v:
+            print("Invalid selection Please Try again")
 def account_creation():
     try:
         global accountNumber
