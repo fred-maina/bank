@@ -53,7 +53,7 @@ def account_creation():
         # Loop until a valid PIN is entered
         while True:
             pin = input("Choose a 4 digit PIN: ")
-            if len(pin) != 4 or not pin.isdigit()#Checks if pin is a 4 digit number if not loops:
+            if len(pin) != 4 or not pin.isdigit():#Checks if pin is a 4 digit number if not loops:
                 print("Invalid PIN. Please input a 4 digit numeric PIN!")
             else:
                 pin = int(pin)
@@ -65,15 +65,19 @@ def account_creation():
 
 if __name__ == "__main__":
     print("Hello there! Welcome to Py-Bank Self-service Menu: ")
-    try:
-        i = int(input("Input 1 if you would like to create a new account or 2 to go to your account: "))
-        if i == 1:
-            account_creation()  # Create a new account
-        elif i == 2:
-            try:
-                account_operations(accountNumber)  # Perform account operations for an existing account
-            except NameError as n:
-                print("No accounts have been added. Please create a new account.")
-                account_creation()  # If no accounts exist, create a new account
-    except ValueError as v:
-        print(v)
+    while (True):
+        try:
+            i = int(input("Input 1 if you would like to create a new account or 2 to go to your account: "))
+            if i == 1:
+                account_creation()  # Create a new account
+                break
+            elif i == 2:
+                try:
+                    account_operations(accountNumber) # Perform account operations for an existing account
+                    break 
+                except NameError as n:
+                    print("No accounts have been added. Please create a new account.")
+                    account_creation()  # If no accounts exist, create a new account
+                    break
+        except ValueError as v:
+            print("Invalid Option Kindly Select 1 or 2: ")
