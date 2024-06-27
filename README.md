@@ -34,7 +34,7 @@ The Bank Management System consists of several classes:
 4. **Self-Service Menu:**
    - Users are presented with a self-service menu upon running the program, where they can choose to create a new account or access an existing account.
 
-## Code Highlights
+## Code Highlights.
 
 - **Validation:** The system ensures that the PIN entered during account creation is exactly 4 digits long and consists only of numeric characters.
 - **Decorator Usage:** The `verify_pin` decorator is used to verify the PIN before allowing transactions to proceed, enhancing security.
